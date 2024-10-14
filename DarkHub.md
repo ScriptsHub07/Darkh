@@ -2509,6 +2509,42 @@ CamShake:Stop()
         return "Remaining " .. 10 - v228 .. " training sessions."
     end
 
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local ImageButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 0.500
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.5, 0, 0.499188304, 0)
+Frame.Size = UDim2.new(0, 565, 0, 337)
+Frame.Visible = false
+
+ImageButton.Parent = ScreenGui
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.838413119, 0, 0.17217344, 0)
+ImageButton.Size = UDim2.new(0, 66, 0, 66)
+ImageButton.Image = "rbxassetid://80525540359341"
+ImageButton.MouseButton1Down:Connect(function()
+	game:GetService("VirtualInputManager"):SendKeyEvent(true, "P" , false , game)
+end)
+
+UICorner.CornerRadius = UDim.new(1, 0)
+UICorner.Parent = ImageButton
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Dark hub", HidePremium = false, IntroText = "", SaveConfig = true, ConfigFolder = "Dark hub"})
 
@@ -11362,9 +11398,19 @@ end)
 
 OrionLib:Init()
 
+C:AddBind({
+	Name = "",
+	Default = Enum.KeyCode.P,
+	Hold = false,
+	Callback = function()
+		Library:ToggleUI()
+	end    
+})
+    Time = 5
+})
+
+
 OrionLib:MakeNotification({
     Name = "Dark hub",
     Content = "Loading Config Complete!!",
     Image = "",
-    Time = 5
-})
