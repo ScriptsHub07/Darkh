@@ -907,7 +907,7 @@ function Click()
 end
 function CheckQuest() 
     MyLevel = game:GetService("Players").LocalPlayer.Data.Level.Value
-    if World1 then
+    if OldWorld then
         if MyLevel == 1 or MyLevel <= 9 then
             Mon = "Bandit"
             LevelQuest = 1
@@ -1103,7 +1103,7 @@ function CheckQuest()
             CFrameQuest = CFrame.new(5259.81982, 37.3500175, 4050.0293, 0.087131381, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, 0.087131381)
             CFrameMon = CFrame.new(5441.95166015625, 42.50205993652344, 4950.09375)
         end
-    elseif World2 then
+    elseif NewWorld then
         if MyLevel == 700 or MyLevel <= 724 then
             Mon = "Raider"
             LevelQuest = 1
@@ -1274,7 +1274,7 @@ function CheckQuest()
             CFrameQuest = CFrame.new(-3054.44458, 235.544281, -10142.8193, 0.990270376, -0, -0.13915664, 0, 1, -0, 0.13915664, 0, 0.990270376)
             CFrameMon = CFrame.new(-3352.9013671875, 285.01556396484375, -10534.841796875)
         end
-    elseif World3 then
+    elseif ThreeWorld then
         if MyLevel == 1500 or MyLevel <= 1524 then
             Mon = "Pirate Millionaire"
             LevelQuest = 1
