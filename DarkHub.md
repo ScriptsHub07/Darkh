@@ -1,27 +1,17 @@
---[[
-
-    Kaitun or Cuttay, a phrase of a Roblox script that fully autofarms everything in Blox Fruits (game)
-    "Ơ! Thằng lồn này dùng cuttay à? Mới chơi có (1) tuần mà đã giàu như này rồi?"
-
-    Binh Hub Kaitun (catn1qqer)
-    Project started on 13/5/2023
-
-]]
-
-_G.Team = "Pirates" -- "Marines"
-_G.FPSBoost = false -- really fucked up the client but the good side is fps go wroom.
+_G.Team = "Pirates"
+_G.FPSBoost = false
 
 getgenv().Config = {
     ["Discord"] = {
         ["Enabled"] = false,
         ["WebhookUrl"] = "your_webhook_here",
-        ["Content"] = "@everyone", -- @everyone or <@roleid/userid>, it can be just text.
+        ["Content"] = "@everyone",
         ["Time"] = 60 -- Seconds
     },
     ["Autofarm"] = {
-        ["BuySwords"] = true, -- xong
+        ["BuySwords"] = true,
         ["BuyAccessories"] = true,
-        ["BuyLegendarySword"] = false -- tạm thời bị gỡ cho shitter bị bại não.
+        ["BuyLegendarySword"] = false
     }
 }
 
@@ -137,12 +127,12 @@ local UICorner_10 = Instance.new("UICorner")
 -- Webhook
 
 local data = {
-    ["username"] = 'Binh Hub Notifier', -- haha NO.
+    ["username"] = 'Lures Kaitun',
     ['content'] = DCSettings["Content"],
     ["embeds"] = {
         {
-            ["title"] = '**Binh Hub Account Status**', -- LMAO WTF
-            ["color"] = 5539744, -- color id		
+            ["title"] = 'Lures Kaitun Account Status**',
+            ["color"] = 5539744,	
             ["type"] = "rich",
             ["fields"] =  {
                 {
@@ -378,7 +368,7 @@ Credits1.BorderSizePixel = 0
 Credits1.Position = UDim2.new(0.566378653, 0, 0.412709624, 0)
 Credits1.Size = UDim2.new(0, 315, 0, 21)
 Credits1.Font = Enum.Font.GothamBold
-Credits1.Text = "legiteriumz, thuy - coding"
+Credits1.Text = "É o Lures"
 Credits1.TextColor3 = Color3.fromRGB(255, 255, 255)
 Credits1.TextSize = 23.000
 Credits1.TextTransparency = 0.790
@@ -393,7 +383,7 @@ Credits2.BorderSizePixel = 0
 Credits2.Position = UDim2.new(0.72432071, 0, 0.150882617, 0)
 Credits2.Size = UDim2.new(0, 194, 0, 21)
 Credits2.Font = Enum.Font.GothamBold
-Credits2.Text = "thuy - ui design"
+Credits2.Text = "dark_769."
 Credits2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Credits2.TextSize = 23.000
 Credits2.TextTransparency = 0.790
@@ -408,7 +398,7 @@ Brand.BorderSizePixel = 0
 Brand.Position = UDim2.new(0.795740545, 0, 0.010291595, 0)
 Brand.Size = UDim2.new(0, 200, 0, 27)
 Brand.Font = Enum.Font.Gotham
-Brand.Text = "catn1qqer x Binh Hub"
+Brand.Text = ""
 Brand.TextColor3 = Color3.fromRGB(255, 255, 255)
 Brand.TextSize = 17.000
 Brand.TextTransparency = 0.440
@@ -585,7 +575,7 @@ Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Logo.Position = UDim2.new(0.0199410655, 0, 0.0274442546, 0)
 Logo.Size = UDim2.new(0, 78, 0, 78)
-Logo.Image = "http://www.roblox.com/asset/?id=13450463175"
+Logo.Image = "rbxassetid://111405391826275"
 
 LogoName.Name = "LogoName"
 LogoName.Parent = Logo
@@ -595,7 +585,7 @@ LogoName.BorderSizePixel = 0
 LogoName.Position = UDim2.new(1.17929673, 0, 0.0880808681, 0)
 LogoName.Size = UDim2.new(0, 124, 0, 70)
 LogoName.Font = Enum.Font.GothamBold
-LogoName.Text = "Binh Hub Kaitun"
+LogoName.Text = "Lures Kaitun"
 LogoName.TextColor3 = Color3.fromRGB(255, 255, 255)
 LogoName.TextSize = 23.000
 LogoName.TextWrapped = true
